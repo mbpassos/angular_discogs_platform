@@ -1,0 +1,28 @@
+<div *ngIf="!isLoading" class="background">
+  <div>
+    <img [src]="img[0]" class="img" />
+  </div>
+
+  <div id="info2">
+    <h3>{{ artist }}</h3>
+    <h4>{{ title }} - {{ year }}</h4>
+    <ul>
+      <li>{{ genres }}</li>
+    </ul>
+    <h4>Tracks:</h4>
+    <ul>
+      <li *ngFor="let track of tracks">{{ track }}</li>
+    </ul>
+  </div>
+
+  <div class="video">
+    <iframe
+      class="youtube-player"
+      width="400"
+      height="280"
+      [src]="video"
+      frameborder="0"
+    ></iframe>
+  </div>
+</div>
+<div *ngIf="isLoading" class="loading"></div>

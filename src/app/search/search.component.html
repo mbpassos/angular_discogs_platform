@@ -1,0 +1,15 @@
+<div class="box">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <div class="container-4">
+      <input
+        name="artist"
+        ngModel
+        required
+        #first="ngModel"
+        placeholder="Search artist"
+        type="search"
+        id="search"
+      /><button class="icon"><fa-icon [icon]="faSearch"></fa-icon></button>
+    </div>
+  </form>
+</div>

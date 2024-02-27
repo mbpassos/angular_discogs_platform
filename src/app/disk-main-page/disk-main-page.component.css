@@ -1,0 +1,43 @@
+li:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+li {
+  margin-right: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+a:link {
+  color: #2b303b;
+}
+.loading {
+  /* z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  margin-left: 70px;
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-image: url("https://i.ibb.co/2tMJhzs/disk2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

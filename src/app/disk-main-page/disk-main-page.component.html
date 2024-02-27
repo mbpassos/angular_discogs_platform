@@ -1,0 +1,7 @@
+<app-search (searchArtist)="onSearchChanged($event)"></app-search>
+<ul *ngIf="!isLoading">
+  <li *ngFor="let link of linkDisks">
+    <a [routerLink]="link.url">{{ link.text }}</a>
+  </li>
+</ul>
+<div *ngIf="isLoading" class="loading"></div>
